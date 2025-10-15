@@ -1,0 +1,97 @@
+:root { 
+  --theme-border-radius: var(--radius-lg); 
+  --theme-border-radius-capped: var(--radius-lg); 
+}
+
+.true.webild-selected {
+  outline: 2px solid rgba(59, 130, 246, 0.9) !important;
+  background-color: rgba(59, 130, 246, 0.05) !important;
+}
+
+.webild-selected {
+  outline: 2px solid rgba(59, 130, 246, 0.9) !important;
+  background-color: rgba(59, 130, 246, 0.05) !important;
+}
+
+:nth-of-type(${index})
+
+Enter && !e.shiftKey) {
+  e.preventDefault();
+  makeUneditable(selectedElement, true);
+} else if (e.key === 
+
+true') {
+  makeUneditable(selectedElement, true);
+}
+
+, actualChanges.length, actualChanges);
+window.parent.postMessage({
+  type: 'webild-changes-data',
+  data: [...actualChanges]
+}, 
+
+text' && change.content !== undefined) {
+  element.textContent = change.content;
+} else if (change.type === 
+
+';
+element.style.backgroundImage = `url('${newSrc}')`;
+
+console.log('[Visual Editor] ✅ Background image replaced:', newSrc);
+const change = {
+  selector: elementSelector,
+  type: 'backgroundImage',
+  oldValue: String(oldSrc),
+  newValue: String(newSrc),
+  sectionId: getSectionId(element),
+  src: newSrc
+};
+actualChanges.push(change);
+console.log(
+
+load', handleImageLoad, { once: true });
+element.addEventListener(
+
+, handleImageError, { once: true });
+
+element.src = newSrc;
+element.setAttribute(
+
+, newSrc);
+element.srcset = '';
+element.removeAttribute('srcset');
+element.style.display = 'none';
+void element.offsetHeight;
+element.style.display = '';
+
+const change = {
+  selector: elementSelector,
+  type: 'image',
+  oldValue: String(oldSrc),
+  newValue: String(newSrc),
+  sectionId: getSectionId(element),
+  src: newSrc,
+  alt: element.alt
+};
+actualChanges.push(change);
+console.log(
+
+Invalid element type',
+  message: `Cannot replace image on ${element.tagName} element
+
+mouseover', handleMouseOver, true);
+document.removeEventListener('mouseout', handleMouseOut, true);
+document.removeEventListener('click', handleClick, true);
+document.removeEventListener('keydown', handleKeyDown, true);
+document.removeEventListener('blur', handleBlur, true);
+window.removeEventListener('scroll', handleScroll, true);
+window.removeEventListener('message', handleMessage, true);
+document.querySelectorAll('.' + hoverClass).forEach(el => {
+  el.classList.remove(hoverClass);
+});
+document.querySelectorAll(
+
+ + selectedClass).forEach(el => {
+  el.classList.remove(selectedClass);
+});
+const styleEl = document.getElementById(
